@@ -1,0 +1,76 @@
+<app-header></app-header>
+
+<div class="container mt-2">
+  <div class="row justify-content-center">
+
+    <div class="col-md-6">
+      <div class="card">
+        <h3 class="m-2 text-center" style="color:rgba(7, 7, 52, 0.648)">Teacher Registration</h3>
+        <div class="card-body">
+          <form [formGroup]="signForm" (ngSubmit)="signUp()">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="exampleInputNamz" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="exampleInputNamz" formControlName="fullname" required>
+                <div *ngIf="signForm.get('fullname')?.hasError('required') && (signForm.get('fullname')?.dirty || signForm.get('fullname')?.touched)" class="text-danger">
+                  Please enter your name!
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="exampleInputMobile" class="form-label">Phone number</label>
+                <input type="number" class="form-control" id="exampleInputMobile" formControlName="mobile" pattern="^[2-5|79]\d{7}$" required>
+                <div *ngIf="signForm.get('mobile')?.invalid && (signForm.get('mobile')?.dirty || signForm.get('mobile')?.touched)" class="text-danger">
+                  Phone is not valid
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email-Address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1"
+                aria-describedby="emailHelp" formControlName="email">
+              <div *ngIf="signForm.get('email')?.hasError('required') && (signForm.get('email')?.dirty || signForm.get('email')?.touched)" class="text-danger">
+                Email address is required.
+              </div>
+              <div *ngIf="signForm.get('email')?.hasError('email') && (signForm.get('email')?.dirty || signForm.get('email')?.touched)" class="text-danger">
+                Invalid email format.
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" formControlName="password">
+              <div *ngIf="signForm.get('password')?.hasError('required') && (signForm.get('password')?.dirty || signForm.get('password')?.touched)" class="text-danger">
+                Password is required.
+              </div>
+              <div *ngIf="signForm.get('password')?.hasError('minlength') && (signForm.get('password')?.dirty || signForm.get('password')?.touched)" class="text-danger">
+                The password must be at least 8 characters long
+              </div>
+            </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="format">Classe</label>
+              <select class="form-control" multiple formControlName="selectedClasses" (change)="getSelectedClasses($event)">
+                <option value="all">All Classes</option>
+                  <option  *ngFor="let opt of classes" value="{{opt.id}}" >{{opt.niveau+opt.section+opt.numero}}</option>
+              </select>
+              </div>
+              <div class="col-md-6 mb-3">
+              <label for="format">Matieres</label>
+            <select class="form-control" formControlName="id_matiere"  (change)="onMatiereChange($event)">
+              <option disabled>Toutes les matiéres </option>
+                <option  *ngFor="let opt of matieres" value="{{opt.id}}" >{{opt.nom}}</option>
+            </select>
+            </div>
+       
+            
+             
+            </div>
+           
+            <button type="submit" class="btn btn-primary">Register</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

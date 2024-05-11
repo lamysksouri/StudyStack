@@ -1,0 +1,40 @@
+<div class="accordion" id="accordionPanelsStayOpenExample">
+	<div *ngFor="let matiere of lesmatieres">
+	  <div class="accordion-item" [id]="'matiere' + matiere.id">
+		<h2 class="accordion-header">
+		  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#collapse' + matiere.id" aria-expanded="true" [attr.aria-controls]="'collapse' + matiere.id " (click)="onMatiereSelected(matiere)">
+			{{matiere.nom}}
+		  </button>
+		</h2>
+		<div [id]="'collapse' + matiere.id" class="accordion-collapse collapse" [attr.aria-labelledby]="'menu' + matiere.id" data-parent="#accordionPanelsStayOpenExample">
+		  <ul class="list-group list-group-flush">
+			<li class="list-group-item">
+				<i class="fa-solid fa-file blue-color"></i>
+				<a href="javascript:void(0);" [routerLink]="'document'">
+					Flux
+				  </a>
+			</li>
+			<li class="list-group-item ">
+				<i class="fa-solid fa-link blue-color"></i>
+				<a href="javascript:void(0);" [routerLink]="'meet'">
+					Courses_Link
+				  </a>
+			</li>
+			<li class="list-group-item">
+				<i class="fa-solid fa-person blue-color"></i>
+				<a href="javascript:void(0);" >
+					Presence
+				  </a>
+			</li>
+			<li class="list-group-item">
+				<i class="fa-solid fa-comment blue-color"></i>
+				<a href="javascript:void(0);" >
+					Chat
+				  </a>
+			</li>
+		  </ul>
+		</div>
+	  </div>
+	</div>
+  </div>
+  

@@ -1,0 +1,75 @@
+
+  body {
+    background-color: #f8f9fa;
+  }
+
+  .container {
+    margin-top: 50px;
+  }
+
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-header {
+    background-image: url('https://shorturl.at/jorV2');
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-color: #000501;
+        color: #fff;
+        border-radius: 8px 8px 0 0;
+        padding: 0px;
+        text-align: center;
+      }
+
+  .card-body {
+    padding: 20px;
+  }
+
+  .form-label {
+    font-weight: bold;
+  }
+
+  .form-control {
+    border-radius: 5px;
+  }
+
+  .btn-primary {
+    background-color:  #228c16;;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+  }
+
+  .btn-primary:hover {
+    background-color: rgba(14, 120, 58, 0.823)
+  }
+
+  .mt-3 {
+    margin-top: 10px;
+  }
+
+  .text-decoration-none {
+    color: #007bff8d;
+    font-weight: bold;
+    float: left;
+    margin-left: 15%;
+  }
+
+  .text-decoration-none:hover {
+    text-decoration: underline;
+  }
+
+  h1{
+    margin-left: 20%;
+  }
+  h6{
+    margin-left: 22%;
+    color: #fafafaa0;
+  }
+  .a1{
+    display: flex;
+    justify-content:flex-end
+  }

@@ -1,0 +1,32 @@
+nav {
+  background: linear-gradient(to right, #000000, #000000);
+  color: #FFF;
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      width: 58%;
+      margin: 0;
+
+      li {
+        cursor: pointer;
+        font-size: 20px;
+        color: #ffffff99;
+        text-decoration: none;
+       
+
+        &:hover {
+          font-size: 23px;
+          background-color: #f0e7e70a;
+        }
+      }
+    }
+  }
+}

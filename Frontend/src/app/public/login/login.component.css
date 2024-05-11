@@ -1,0 +1,89 @@
+
+  .container {
+    margin-top: 50px;
+    float: right;
+
+  }
+  h1{
+    color: rgb(245, 245, 245);
+    font-weight: bolder;
+    margin-left: 25%;
+  }
+
+
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-header {
+background-image: url('https://shorturl.at/jorV2');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-color: #000702;
+    color: #fff;
+    border-radius: 8px 8px 0 0;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .card-body {
+    padding: 20px;
+  }
+
+  .form-label {
+    font-weight: bold;
+  }
+
+  .form-control {
+    border-radius: 5px;
+  }
+
+  .btn-primary {
+    background-color: #228c16;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+  }
+
+  .btn-primary:hover {
+    background-color: #000000;
+  }
+
+  .mt-3 {
+    margin-top: 15px;
+  }
+
+  .text-decoration-none {
+    font-weight: bold;
+    color: #007bff8d;
+  }
+
+  .text-decoration-none:hover {
+    text-decoration: underline;
+  }
+
+  #in{
+    margin-left: 10%;
+  }
+  #md{
+    color: rgba(153, 51, 51, 0.683);
+    margin-left: 20%;
+  }
+.e{
+  color: rgba(255, 255, 255, 0.713);
+  margin-left: 25%;
+}
+#hi{
+  margin-left: 30%;
+  }
+#e1{
+  margin-left: 30%;
+  color: rgba(255, 255, 255, 0.713);
+}
+
+.a1{
+  display: flex;
+  justify-content:flex-end
+}

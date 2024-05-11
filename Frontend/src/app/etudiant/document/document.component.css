@@ -1,0 +1,20 @@
+.container {
+    margin-top: 20px;
+  }
+  
+  .card {
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-title {
+    margin-bottom: 15px;
+  }
+  
+  .card-buttons .btn {
+    margin-right: 10px;
+  }
+  

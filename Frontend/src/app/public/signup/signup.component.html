@@ -1,0 +1,60 @@
+
+<div class="container mt-1">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header text-center  text-white">
+          <h1>Registration</h1>
+          <h6>Sign up</h6>
+        </div>
+        <div class="card-body">
+          <form [formGroup]="signForm" (ngSubmit)="signUp()">
+            <div class="mb-3">
+              <label for="exampleInputNamz" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="exampleInputNamz" formControlName="fullname" required>
+              <div *ngIf="signForm.get('fullname')?.hasError('required') && (signForm.get('fullname')?.dirty || signForm.get('fullname')?.touched)" class="text-danger">
+                Please enter your name!
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputMobile" class="form-label" >Phone number</label>
+              <input type="number" class="form-control" id="exampleInputMobile" formControlName="mobile" required>
+              <div *ngIf="signForm.get('mobile')?.invalid && (signForm.get('mobile')?.dirty || signForm.get('mobile')?.touched)" class="text-danger">
+                Phone is not valid
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email-Address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1"
+                aria-describedby="emailHelp" formControlName="email">
+              <div *ngIf="signForm.get('email')?.hasError('required') && (signForm.get('email')?.dirty || signForm.get('email')?.touched)" class="text-danger">
+                Email address is required.
+              </div>
+              <div *ngIf="signForm.get('email')?.hasError('email') && (signForm.get('email')?.dirty || signForm.get('email')?.touched)" class="text-danger">
+                Invalid email format.
+              </div>
+            </div>
+            
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" formControlName="password">
+              <div *ngIf="signForm.get('password')?.hasError('required') && (signForm.get('password')?.dirty || signForm.get('password')?.touched)" class="text-danger">
+                Password is required.
+              </div>
+              <div *ngIf="signForm.get('password')?.hasError('minlength') && (signForm.get('password')?.dirty || signForm.get('password')?.touched)" class="text-danger">
+                The password must be at least 8 characters long
+              </div>
+            </div>
+            
+
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+          </form>
+          <div class="mt-3">
+            <a routerLink="/login" class="text-decoration-none">"Already registered? Click here to log in</a>
+          </div>
+          <a class="nav-link active a1" aria-current="page" href="#!"><img src="https://icones.pro/wp-content/uploads/2021/02/icone-de-la-maison-verte.png" alt=""  height="30" width="30"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,81 @@
+{
+  "matiere": [
+    {
+      "id": 1,
+      "nom": "Java",
+      "note": 15,
+      "planning": "Plan de cours Java:\n- Introduction à Java\n- Installation et configuration du JDK (Java Development Kit)\n- Notions de base du langage Java\n\n- Structures conditionnelles\n\n- Fonctions et méthodes\n- Classes et objets\n- Héritage\n\n- Polymorphisme\n- Interfaces\n- Packages"
+    },
+    {
+      "id": 2,
+      "nom": "Angular",
+      "note": 15,
+      "planning": "Plan de cours Angular:\n- Introduction à Angular\n- Installation et configuration de l'environnement de développement\n- Notions de base de l'architecture Angular\n\n- Composants et directives\n- Services et injections de dépendances\n- Routage\n\n- Formulaires et validation\n- HTTP et services web\n- Tests unitaires et d'intégration\n- Déploiement et optimisation des performances"
+    },
+    {
+      "id": 3,
+      "nom": "BD",
+      "note": 15,
+      "planning": "Plan de cours Base de données:\n- Introduction aux bases de données\n- Systèmes de gestion de bases de données (SGBD)\n- Modèles de données et normalisation\n\n- Langage de requêtes structurées (SQL)\n- Conception et modélisation de bases de données\n- Gestion des transactions\n\n- Sécurité et intégrité des données\n- Optimisation des performances\n- Réplication et sauvegarde\n- Gestion des utilisateurs et des droits"
+    },
+    {
+      "id": 4,
+      "nom": "JEE",
+      "note": 15,
+      "planning": "Plan de cours JEE:\n- Introduction à Java EE\n- Installation et configuration de l'environnement de développement\n- Notions de base de l'architecture Java EE\n\n- Servlets et JavaServer Pages (JSP)\n- Programmation orientée composants (POC)\n- Gestion des erreurs et des exceptions\n\n- Services web et XML\n- Sécurité et authentification\n- Gestion des sessions et des cookies\n\n- Tests unitaires et d'intégration\n- Déploiement et optimisation des performances"
+    },
+    {
+      "id": 5,
+      "nom": "Symfony",
+      "note": 15,
+      "planning": "Plan de cours Symfony:\n- Introduction à Symfony\n- Installation et configuration de l'environnement de développement\n- Notions de base de l'architecture Symfony\n\n- Création et utilisation des contrôleurs\n- Création et utilisation des entités\n- Création et utilisation des formulaires\n\n- Routage et gestion des URL\n- Gestion des sessions et des cookies\n- Authentification et autorisation\n\n- Tests unitaires et d'intégration\n- Déploiement et optimisation des performances"
+    }
+  ],
+  "users": [
+    {
+      "fullname": "etudiant",
+      "email": "etudiant@etudiant.com",
+      "password": "etudiant",
+      "mobile": 96545309,
+      "id": 1,
+      "type": "etudiant"
+    },
+    {
+      "fullname": "prof",
+      "email": "prof@prof.com",
+      "password": "professeur",
+      "mobile": 96545309,
+      "id": 4,
+      "type": "professeur"
+    },
+    {
+      "fullname": "admin",
+      "email": "admin@admin.com",
+      "password": "admin",
+      "mobile": 96545309,
+      "id": 2,
+      "type": "admin"
+    }], 
+    "document": [
+      {
+        "id": 1,
+        "description": "document 1",
+        "url": "assets/TP4_API_ES.pdf",
+        "id_matiere": 3
+      },
+      {
+        "id": 2,
+        "description": "document 2",
+        "url": "assets/td3.pdf",
+        "id_matiere": 2
+      },
+      {
+        "id": 3,
+        "description": "document 3",
+        "url": "assets/Chapitre3_IO_2022.pdf",
+        "id_matiere":  5
+      }
+  
+    ]
+
+}

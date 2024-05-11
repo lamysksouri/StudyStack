@@ -1,0 +1,32 @@
+
+nav {
+  background: linear-gradient(to right, #000000, #000000);
+  color: #FFF;
+
+
+
+
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      width: 90%;
+      margin: 0;
+      
+      li {
+        cursor: pointer;
+        font-size: 20px;
+        color: #FFF;
+        text-decoration: none;
+       
+
+        &:hover {
+          font-size: 23px;
+          background-color: #f0e7e70a;
+        }
+      }
+    }
+  }
+.container{
+  background-color: #000000;
+}
